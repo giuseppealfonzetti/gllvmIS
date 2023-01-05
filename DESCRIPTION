@@ -1,0 +1,21 @@
+Type: Package
+Package: gllvmSML
+Title: Simulated Maximum Likelihood estimation for Generalized Linear Latent Variable Models
+Version: 1.0
+Authors@R: 
+    c(person("Giuseppe", "Alfonzetti", email = "giuseppe.alfonzetti@phd.unipd.it", role = c("aut", "cre")))
+Description: Estimation of Generalized Linear Latent Variable Models via Simulated Maximum Likelihood.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+LinkingTo: 
+    Rcpp,
+    RcppEigen,
+    RcppThread
+Imports: 
+    Rcpp,
+    RcppEigen,
+    RcppThread,
+    ucminf
