@@ -24,7 +24,7 @@ The gllvmSML deals with the estimation of GLLVMs using Similuted Maximum Likelih
 
 ## Installation
 
-You can install the development version of glllvmSML like so:
+You can addondenso the development version of glllvmSML like so:
 
 ``` r
 devtools::install_github("giuseppealfonzetti/gllvmIS")
