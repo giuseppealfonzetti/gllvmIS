@@ -1,26 +1,18 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
 
 # gllvmSML
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/gllvmSML)](https://CRAN.R-project.org/package=gllvmSML)
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/gllvmSML)](https://CRAN.R-project.org/package=gllvmSML)
 <!-- badges: end -->
 
-The gllvmSML deals with the estimation of GLLVMs using Similuted Maximum Likelihood. By now, only estimation for binary data is implemented.
+The gllvmSML deals with the estimation of GLLVMs using Similuted Maximum
+Likelihood. By now, only estimation for binary data is implemented.
 
 ## Installation
 
@@ -34,7 +26,7 @@ devtools::install_github("giuseppealfonzetti/gllvmIS")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+``` r
 library(gllvmSML)
 
 # Setup the model
@@ -78,8 +70,13 @@ fit <-  fit_gllvmSML2(
     RQMCFLAG = 2,
     INFOFLAG = T
 )
+#> 1. Initialising at default values
+#> 2. Drawing rqmc Halton (qrng::ghalton).
+#> 3. Optimisation...
+#> 4. Done! (80.38 secs)
 
 mean((fit$theta_init-true_theta)^2)
+#> [1] 0.1523643
 mean((fit$theta-true_theta)^2)
+#> [1] 0.06165599
 ```
-
